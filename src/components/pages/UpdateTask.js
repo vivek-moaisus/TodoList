@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 const UpdateTask = ({ modal, toggle, updateTask, taskObj }) => {
@@ -17,10 +17,10 @@ const UpdateTask = ({ modal, toggle, updateTask, taskObj }) => {
         }
     }
 
-    useEffect(() => {
-        setTaskName(taskObj.TaskName)
-        setStatus(taskObj.Status)
-    }, [])
+    // useEffect(() => {
+    //     setTaskName(taskObj.TaskName)
+    //     setStatus(taskObj.Status)
+    // }, [])
 
     const handleUpdate = (e) => {
         e.preventDefault();

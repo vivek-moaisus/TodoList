@@ -20,7 +20,7 @@ const UpdateTask = ({ modal, toggle, updateTask, taskObj }) => {
     useEffect(() => {
         setTaskName(taskObj.TaskName)
         setStatus(taskObj.Status)
-    }, [])
+    }, [taskObj])
 
     const handleUpdate = (e) => {
         e.preventDefault();

@@ -3,6 +3,12 @@
 body {
     font-family: 'Raleway', sans-serif;
 }
+.header{
+    position: fixed;
+    width: 100vw;
+    margin-top: -18vh;
+    z-index: 1;
+}
 
 ::-webkit-scrollbar {
     display: none;
@@ -10,6 +16,7 @@ body {
 
 .task-container{
     display: flex;
+    margin-top: 18vh;
     flex-wrap:wrap;
 }
 
